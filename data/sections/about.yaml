@@ -61,10 +61,10 @@ softSkills:
 - name: Editing
   percentage: 85
   color: green
-- name: Mastering
+- name: Composition
   percentage: 85
   color: sky
-- name: Composition
+- name: Mastering
   percentage: 85
   color: orange
 # you can also provide color code instead of pre-defined color name

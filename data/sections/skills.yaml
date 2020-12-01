@@ -35,7 +35,7 @@ skills:
 #  url: "https://prometheus.io/"
 
 - name: Restoration
-  icon: "images/skills/forensic.png"
+  icon: "images/skills/linux.png"
   summary: "Well versed in audio repair and clean up for forensic or personal needs."
 
 # - name: Git

@@ -50,22 +50,22 @@ socialLinks:
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
 - name: Sound Design
-  percentage: 85
+  percentage: 100
   color: blue
 - name: Implementation
-  percentage: 90
+  percentage: 100
   color: yellow
 - name: Mixing
-  percentage: 85
+  percentage: 100
   color: pink
 - name: Editing
-  percentage: 85
+  percentage: 100
   color: green
 - name: Composition
-  percentage: 85
+  percentage: 90
   color: sky
 - name: Mastering
-  percentage: 85
+  percentage: 95
   color: orange
 # you can also provide color code instead of pre-defined color name
 # - name: Example 1

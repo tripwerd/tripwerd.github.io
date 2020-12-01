@@ -10,39 +10,39 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Sound Design
+- name: Video Games
   icon: "images/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+  summary: "Fluent in implementation with Wwise, editing with Unity, and a solid conceptual understanding of scripting between the two programs."
+  url: "https://vimeo.com/449554456"
 
-- name: Go Development
-  icon: "images/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+- name: Film
+  icon: "images/skills/film.png"
+  summary: "Seasoned in dialogue, SFX, editing, mixing, and conforming to picture."
+  url: "https://vimeo.com/403883082"
 
-- name: Cloud Computing
+- name: TV
   icon: "images/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Experienced in sound design and ADR for television."
 
-- name: Docker
-  icon: "images/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
+- name: Podcasts
+  icon: "images/skills/docker.png"
+  summary: "Ready to record, produce, or assist with any podcasting needs."
+#  url: "https://www.docker.com/"
 
-- name: Prometheus
+- name: Advertising
   icon: "images/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
+  summary: "Worked with some of the most well established ad agencies in the world at the Chicago Recording Company."
+#  url: "https://prometheus.io/"
 
-- name: Linux
-  icon: "images/skills/linux.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+- name: Restoration
+  icon: "images/skills/forensic.png"
+  summary: "Well versed in audio repair and clean up for forensic or personal needs."
 
-- name: Git
-  icon: "images/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  url: "https://git-scm.com/"
+# - name: Git
+#  icon: "images/skills/git.png"
+#  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+#  url: "https://git-scm.com/"
 
-- name: C++
-  icon: "images/skills/c++.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+# - name: C++
+#  icon: "images/skills/c++.png"
+#  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."

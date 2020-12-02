@@ -36,28 +36,20 @@ projects:
   # repo: https://github.com/tensorflow/tensorflow
   url: "https://vimeo.com/403883082"
   # summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+  tags: ["machine-learning","academic"]
 
 - name: Composition
-  role: Team Lead
+  logo: images/projects/gamereel.svg
+  role: Interactive Scoring
   # timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
+  url: "https://vimeo.com/449291218"
   # summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+  tags: ["iot","professional"]
 
-- name: Nocode
-  logo: images/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
-
-- name: Toha
-  logo: images/projects/toha.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name: Music
+  logo: images/projects/spotify.png
+  role: Producer, Engineer
+  # timeline: "Jun 2019 - Present"
+  # repo: https://github.com/hossainemruz/toha
+  summary: Coming soon!
+  tags: ["hobby","hugo","theme"]

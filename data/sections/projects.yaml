@@ -11,16 +11,16 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Professional
+- name: Interactive
   filter: "professional"
-- name: Academic
+- name: Linear
   filter: "academic"
-- name: Hobby
+- name: Music
   filter: "hobby"
 
 # your projects
 projects:
-- name: Kubernetes
+- name: Video Game Demo Reel
   logo: images/projects/kubernetes.png
   role: Contributor
   timeline: "March 2018 - Present"

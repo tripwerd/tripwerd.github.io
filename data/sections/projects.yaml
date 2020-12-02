@@ -21,20 +21,20 @@ buttons:
 # your projects
 projects:
 - name: Video Game Demo Reel
-  logo: images/projects/kubernetes.png
+  logo: images/projects/gamereel.svg
   role: Implementation, Sound Design
   # timeline: "March 2018 - Present"
   # repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  # url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  url: "https://vimeo.com/449554456"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   # summary: Production-Grade Container Scheduling and Management.
   tags: ["professional", "kubernetes", "cloud"]
 
 - name: Cinema Demo Reel
-  logo: images/projects/tensorflow.png
-  role: Developer
+  logo: images/projects/gamereel.svg
+  role: Sound Design, ADR
   # timeline: "Jun 2018 - Present"
   # repo: https://github.com/tensorflow/tensorflow
-  #url: ""
+  url: "https://vimeo.com/403883082"
   # summary: An Open Source Machine Learning Framework for Everyone.
   tags: ["professional", "machine-learning","academic"]
 

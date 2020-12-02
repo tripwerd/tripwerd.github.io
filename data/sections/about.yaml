@@ -64,7 +64,7 @@ softSkills:
 - name: Composition
   percentage: 90
   color: sky
-- name: Mastering
+- name: Recording
   percentage: 90
   color: orange
 # you can also provide color code instead of pre-defined color name

@@ -48,7 +48,7 @@ projects:
 
 - name: Music
   logo: images/projects/spotify.png
-  role: Producer, Engineer
+  role: Engineer, Producer
   # timeline: "Jun 2019 - Present"
   # repo: https://github.com/hossainemruz/toha
   summary: Coming soon!

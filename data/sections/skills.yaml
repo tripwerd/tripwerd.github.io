@@ -15,24 +15,24 @@ skills:
   summary: "Fluent in implementation with Wwise, editing with Unity, and a solid conceptual understanding of scripting between the two programs."
   url: "https://vimeo.com/449554456"
 
-- name: Film
-  icon: "images/skills/go.png"
-  summary: "Seasoned in dialogue, SFX, editing, mixing, and conforming to picture."
-  url: "https://vimeo.com/403883082"
-
-- name: TV
+- name: Cinema
   icon: "images/skills/cloud.png"
-  summary: "Experienced in sound design and ADR for television."
+  summary: "Experienced in dialogue, SFX, ADR, and conforming to picture for film and television."
+  url: "https://vimeo.com/403883082"
 
 - name: Podcasts
   icon: "images/skills/docker.png"
-  summary: "Ready to record, produce, or assist with any podcasting needs."
+  summary: "Ready to record, mix, produce, or assist with any podcasting needs."
 #  url: "https://www.docker.com/"
 
 - name: Advertising
   icon: "images/skills/prometheus.png"
   summary: "Worked with some of the most well established ad agencies in the world at the Chicago Recording Company."
 #  url: "https://prometheus.io/"
+
+- name: Music
+  icon: "images/skills/go.png"
+  summary: "Seasoned in producing, mixing, and mastering music of all genres, possesing expert level knowledge of music theory and having played classical piano for 12 years and studied jazz saxophone at a collegiate level."
 
 - name: Restoration
   icon: "images/skills/linux.png"

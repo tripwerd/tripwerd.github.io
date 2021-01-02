@@ -29,6 +29,15 @@ projects:
   # summary: Production-Grade Container Scheduling and Management.
   tags: ["professional", "kubernetes", "cloud"]
 
+- name: Halo Cinematic
+  logo: images/projects/gamereel.svg
+  role: Sound Redesign
+  # timeline: "Jun 2018 - Present"
+  # repo: https://github.com/tensorflow/tensorflow
+  url: "https://vimeo.com/496297189"
+  # summary: An Open Source Machine Learning Framework for Everyone.
+  tags: ["machine-learning","academic"]
+
 - name: Cinema Demo Reel
   logo: images/projects/gamereel.svg
   role: Sound Design, ADR

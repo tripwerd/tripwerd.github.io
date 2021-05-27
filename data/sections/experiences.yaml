@@ -10,6 +10,22 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Blerp
+    url: "https://blerp.com/"
+    location: Salt Lake City, UT
+    # company overview
+    overview: Blerp is an audio expression platform for finding, sharing, and creating short soundbites. With funding from noteable firms such as Amazon's Alexa Accelerator, Blerp has broke into the audio extension space in Twitch with several other markets to come in the future.
+  positions:
+  - designation: Sound Designer
+    start: February 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Creating and managing interface sound design for user platforms
+    - Audio content creation in collaboration with Sales and Success departments
+    - Loudness normalization consulting and troubleshooting 
+- company:
     name: Chicago Recording Company
     url: "https://www.chicagorecording.com"
     location: Chicago, IL
@@ -18,6 +34,7 @@ experiences:
   positions:
   - designation: Assistant Engineer
     start: March 2019
+    end: February 2021
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
@@ -65,8 +82,8 @@ experiences:
     - Featured at the 2020 Palm Springs International ShortFest, Nashville Film Festival, and NFFTY
 
 - company:
-    name: Red Berenson Legacy Film
-  #  url: "https://masbowls.com/"
+    name: Big Ten Network
+    url: "https://www.btnplus.com/video/michigan-man-the-red-berenson-story"
     location:
     overview: Score recordist and mixer for Big Ten Network feature film.
   positions:
@@ -74,4 +91,4 @@ experiences:
     start: March 2019
     end: April 2019
     responsibilities:
-    - Multi tracking, mixing and mastering the score for the upcoming Big Ten Network Michigan Hockey documentary    
+    - Multi tracking, mixing and mastering the score for the Big Ten Network's 2021 documentary "Michigan Man - The Red Berenson Story"

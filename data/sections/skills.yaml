@@ -34,9 +34,9 @@ skills:
   icon: "images/skills/go.png"
   summary: "Seasoned in producing, mixing, and mastering music of all genres, possesing expert level knowledge of music theory and having played classical piano for 12 years and studied jazz saxophone at a collegiate level."
 
-- name: Restoration
+- name: Consulting
   icon: "images/skills/linux.png"
-  summary: "Well versed in audio repair and clean up for forensic or personal needs."
+  summary: "Happy to provide input or assist with any and all audio needs!"
 
 # - name: Git
 #  icon: "images/skills/git.png"

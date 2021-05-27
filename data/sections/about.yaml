@@ -6,11 +6,11 @@ section:
   showOnNavbar: true
 
 # your designation
-designation: Audio Engineer
+designation: Sound Designer
 # your company information
 company:
-  name: Chicago Recording Company
-  url: "https://www.chicagorecording.com"
+  name: Blerp
+  url: "https://www.blerp.com"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"

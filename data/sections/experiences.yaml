@@ -14,7 +14,7 @@ experiences:
     url: "https://blerp.com/"
     location: Salt Lake City, UT
     # company overview
-    overview: Blerp is an audio expression platform for finding, sharing, and creating short soundbites. With funding from noteable firms such as Amazon's Alexa Accelerator, Blerp has broke into the audio extension space in Twitch with several other markets to come in the future.
+    overview: Blerp is a short form audio platform for sharing and creating soundbites. Backed by noteable firms such as Amazon's Alexa Accelerator, Blerp has broke into the audio expression space in Twitch with several other markets to come in the future.
   positions:
   - designation: Sound Designer
     start: February 2021
@@ -22,8 +22,8 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Creating and managing interface sound design for user platforms
-    - Audio content creation in collaboration with Sales and Success departments
+    - Creating and managing product interface sound design
+    - Content creation across platforms
     - Loudness normalization consulting and troubleshooting 
 - company:
     name: Chicago Recording Company

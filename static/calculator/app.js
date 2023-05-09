@@ -20,5 +20,17 @@ async function sendCalculation(calculation) {
   }
 }
 
+// Perform the calculation and display the result
+const result = calculate(num1, num2, operation);
+
+// Send the calculation to the server
+sendCalculation({
+  num1: num1,
+  num2: num2,
+  operation: operation,
+  result: result,
+});
+
+
 // Call the sendCalculation function when a calculation is performed on your calculator.
 // This part depends on the existing code in your calculator app.

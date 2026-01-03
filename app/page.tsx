@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 export default function Home() {
   const [openProject, setOpenProject] = useState<string | null>(null);
@@ -98,13 +97,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center md:justify-end">
-              <div className="relative w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden border-4 border-orange shadow-2xl">
-                <Image
+              <div className="w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden border-4 border-orange shadow-2xl">
+                <img
                   src="/headshot_blue.jpg"
                   alt="Trip Werd headshot"
-                  fill
-                  className="object-cover object-top"
-                  priority
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>

@@ -48,12 +48,12 @@ export default function Home() {
                 Hi, I'm Trip.
               </h1>
               <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed mb-8">
-                I'm a musician turned product manager with an ear for user needs and a proven track record of shipping real solutions that drive meaningful metrics.
+                I'm a musician turned PM with an ear for user needs, a feel for product cadence, and a proven track record of shipping real solutions that drive meaningful metrics.
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col gap-6">
                 <a
                   href="#shipped"
-                  className="px-8 py-4 bg-orange text-black font-semibold rounded-lg hover:bg-orange-light transition-colors"
+                  className="px-8 py-4 bg-orange text-black font-semibold rounded-lg hover:bg-orange-light transition-colors w-fit"
                 >
                   What I've Shipped
                 </a>
@@ -120,7 +120,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">Beginnings in Music</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I studied <a href="https://youtu.be/SSjNtMzrdTQ?si=P4LEsxmbRDcO4Lfc" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">classical piano for 14 years</a> and was a dedicated saxophonist, eventually <a href="https://www.youtube.com/watch?v=_YqqWSv6Rh0&list=RD_YqqWSv6Rh0&start_radio=1" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">performing for New Trier Township High School</a>—one of the top high school jazz programs in the country—in venues across New York, Chicago, and New Orleans. Along the way, I had the opportunity to open for groups and artists including the Dizzy Gillespie All Stars, Christian McBride, and Nicholas Payton. As principle alto saxophonist, what I loved most was leading my section: learning challenging material, seeing the group grow and excel, and celebrating the shared success of a strong performance together.
+                I studied <a href="https://youtu.be/SSjNtMzrdTQ?si=P4LEsxmbRDcO4Lfc" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">classical piano for 14 years</a> and was a dedicated saxophonist, eventually <a href="https://www.youtube.com/watch?v=_YqqWSv6Rh0&list=RD_YqqWSv6Rh0&start_radio=1" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">performing for New Trier Township High School</a>—one of the top high school jazz programs in the country—in venues across New York, Chicago, and New Orleans. Along the way, I had the opportunity to open for groups and artists including the Dizzy Gillespie All Stars and Christian McBride. As principle alto saxophonist, what I loved most was leading my saxophone section: learning challenging material, pushing us to excel, and celebrating the shared success of a strong performance together.
               </p>
             </div>
 
@@ -130,7 +130,7 @@ export default function Home() {
                 I attended the University of Michigan to study jazz saxophone performance. While I loved music, I came to realize that I didn't want to pursue life as a professional musician. Instead, I became interested in the technical side of sound and transitioned into audio engineering.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                I learned to mix, edit, and design audio for music, television, advertising, film, and video games. I worked at the <a href="https://chicagorecordingcompany.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Chicago Recording Company</a>, where I was able to work with clients like Chance the Rapper, John Cusack, and Chris Rock. Then, in 2021, I joined the startup Blerp as a sound designer.
+                I learned to mix, edit, and design audio for music, television, advertising, <a href="https://vimeo.com/403883082" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">film</a>, and <a href="https://vimeo.com/449554456" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">video games</a>. I worked at the <a href="https://chicagorecordingcompany.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Chicago Recording Company</a>, where I was able to work with clients like Chance the Rapper, John Cusack, and Chris Rock. Then, in 2021, I joined the startup Blerp as a sound designer.
               </p>
             </div>
 
@@ -140,17 +140,17 @@ export default function Home() {
                 At <a href="https://blerp.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Blerp</a>, I was exposed to product management for the first time. Watching designers, engineers, and PMs work together to ship meaningful outcomes echoed the teamwork I'd experienced as principle alto saxophonist, and I became instantly hooked.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                I immersed myself in everything product—both inside and outside the office—reading books, sitting in on discussions, contributing wherever possible, and gradually taking on more responsibility. That progression led to over four years in a dedicated product role, where I shipped solutions across our live streaming and Discord product suites.
+                I immersed myself in everything product—both inside and the Blerp office—reading books, sitting in on discussions, contributing wherever possible, and gradually taking on more responsibility. That progression led to over four years in a dedicated product role, where I shipped solutions across our product suite.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">Leveling Up</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                While I loved my time working in product at Blerp, I knew that to truly excel as a product manager I needed to deepen my business and technical foundations. I began the <a href="https://www.stern.nyu.edu/programs-admissions/tech-mba/program" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Tech MBA</a> program at the NYU Stern School of Business in May 2025.
+                While I loved my time working at Blerp, I knew that to truly excel as a PM I needed to deepen my business and technical foundations. I began the <a href="https://www.stern.nyu.edu/programs-admissions/tech-mba/program" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Tech MBA</a> program at the NYU Stern School of Business in May 2025.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                The MBA has been transformative. It's given me stronger fluency in applying technology to real business problems and sharpened how I think about product decisions in a broader organizational context. Developing skills across disciplines like data science, finance, engineering, and business strategy has been extremely rewarding and confidence-boosting.
+                The MBA has been transformative. It's given me stronger fluency in applying technology to real business problems and sharpened how I think about product decisions in a broader organizational context. Developing skills across disciplines like data science, finance, engineering, and business strategy has been rewarding and strengthened confidence significantly.
               </p>
             </div>
 
@@ -160,7 +160,7 @@ export default function Home() {
                 I graduate in May 2026. While I've loved building products in a startup environment, I see my next chapter in a larger organization—one where I can learn from exceptional product leaders and operate at greater scale.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                I'm excited to bring my unique background to that environment, contributing thoughtfully while continuing to grow as a product manager.
+                I'm excited to bring my unique background to that environment, contributing thoughtfully while continuing to grow as a product leader.
               </p>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function Home() {
             <div id="instant-rating" className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
               <button
                 onClick={() => toggleProject('instant-rating')}
-                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors"
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
               >
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
@@ -230,7 +230,7 @@ export default function Home() {
             <div id="category-moderation" className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
               <button
                 onClick={() => toggleProject('category-moderation')}
-                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors"
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
               >
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
@@ -276,13 +276,13 @@ export default function Home() {
             <div id="ask-ai" className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
               <button
                 onClick={() => toggleProject('ask-ai')}
-                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors"
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
               >
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-2">Ask AI</h3>
                     <p className="text-orange font-medium mb-3">
-                      Lifted active channel revenue by ~20%, neutralized competitive pressure
+                      Lifted active channel revenue by ~20%
                     </p>
                     <div className="flex gap-2 flex-wrap">
                       <span className="px-3 py-1 bg-zinc-800 text-orange rounded-full text-sm">AI/ML</span>
@@ -326,7 +326,7 @@ export default function Home() {
             <div id="community-wallet" className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
               <button
                 onClick={() => toggleProject('community-wallet')}
-                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors"
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
               >
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
@@ -375,7 +375,7 @@ export default function Home() {
             <div id="leaderboards" className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
               <button
                 onClick={() => toggleProject('leaderboards')}
-                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors"
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
               >
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
@@ -431,10 +431,10 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">The Grateful Dead</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Needless to say, music has always been a big part of my life—composing it, listening to it, and playing it. I gravitate toward folk, rock, and jazz, but my introduction to the Dead & Co at Wrigley Field in 2022 stands out as the most profound musical experience I've had.
+                Needless to say, music has always been a big part of my life—composing it, listening to it, and playing it. I gravitate toward folk, rock, and jazz, but my introduction to Dead & Co at Wrigley Field in 2022 stands out as the most seminal musical experience I've had.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Since then, I've seen them 9 times. What keeps me coming back is the combination of improvisation, thoughtful setlist design, emotional range, deep lore, and the strong sense of culture and community around the music. I love the musical paradox at the heart of it all: the music can be both incredibly complex and disarmingly simple simultaneously.
+                Since then, I've seen them 9 times. What keeps me coming back is the combination of improvisation, thoughtful setlist design, emotional range, deep lore, and the strong sense of culture and community around the music. At the heart of the music sits a profound paradox: the music is both incredibly complex and disarmingly simple simultaneously.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
                 For any fellow Deadheads, a few favorites: <em>Maybe It Was the Roses</em>, <em>Peggy-O</em>, <em>Terrapin Station</em>, and <em>Help on the Way</em>.
@@ -444,10 +444,10 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">American Football</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                I've always loved sports, and football has been my favorite for as long as I can remember. What draws me in is the same paradox I enjoy in other systems: on one hand, football is deeply complex and strategic; on the other, the teams that win are often the ones that execute the fundamentals best.
+                Sports have always mattered to me, especially football. What draws me in is the same paradox I enjoy in other systems: on one hand, football is deeply complex and strategic; on the other, the teams that win are often the ones that execute the fundamentals best.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                More than anything, I love watching <a href="https://x.com/chargers/status/1855780531394551838" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">teams experience shared accomplishment</a>—those moments when preparation, trust, and execution pay off tremendously. It reminds me of my time as a lead alto saxophonist and continues to inspire how I think about teamwork and leadership as a product manager.
+                More than anything, I love watching <a href="https://x.com/chargers/status/1855780531394551838" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">teams experience shared accomplishment</a>—those moments when preparation, trust, and execution pay off tremendously. It reminds me of my time as a lead alto saxophonist and continues to inspire how I think about teamwork and leadership as a PM.
               </p>
             </div>
 

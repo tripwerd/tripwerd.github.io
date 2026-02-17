@@ -483,7 +483,7 @@ export default function Home() {
                   <p className="text-gray-300 text-lg leading-relaxed">
                     Each of these questions are explored in the context of time and comparison to other companies. Users are able to see data around earnings, revenue, market cap, and more.
                   </p>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <p className="text-gray-300 text-lg leading-relaxed mt-4">
                     The data surfaced in the UI is intentionally constrained to the metrics that matter most, balancing clarity for the user with efficient upstream API usage and minimizing unnecessary payload size.
                   </p>
                 </div>

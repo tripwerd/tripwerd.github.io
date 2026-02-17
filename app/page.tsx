@@ -481,7 +481,10 @@ export default function Home() {
                     <li>How much does the market believe the company is worth?</li>
                   </ol>
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    Each of these questions are explored in the context of time and comparison to other companies. Users are able to see data around earnings, revenue, market cap, and more. The data surfaced in the UI is intentionally constrained to the metrics that matter most, balancing clarity for the user with efficient upstream API usage and minimizing unnecessary payload size.
+                    Each of these questions are explored in the context of time and comparison to other companies. Users are able to see data around earnings, revenue, market cap, and more.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    The data surfaced in the UI is intentionally constrained to the metrics that matter most, balancing clarity for the user with efficient upstream API usage and minimizing unnecessary payload size.
                   </p>
                 </div>
               )}

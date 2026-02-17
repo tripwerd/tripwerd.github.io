@@ -4,9 +4,14 @@ import { useState } from 'react';
 
 export default function Home() {
   const [openProject, setOpenProject] = useState<string | null>(null);
+  const [openCaseStudy, setOpenCaseStudy] = useState<string | null>(null);
 
   const toggleProject = (projectId: string) => {
     setOpenProject(openProject === projectId ? null : projectId);
+  };
+
+  const toggleCaseStudy = (sectionId: string) => {
+    setOpenCaseStudy(openCaseStudy === sectionId ? null : sectionId);
   };
 
   return (
@@ -431,8 +436,226 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TECHNICAL CASE STUDY */}
+      <section id="case-study" className="py-20 px-6 bg-zinc-900/50 border-t border-zinc-800">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-bold text-white mb-4">
+            <a href="https://compare-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Yardstick</a>:
+          </h2>
+          <p className="text-xl text-gray-400 mb-12">
+            Optimized for mobile, Yardstick is a financial data app, designed to help users build an intuitive sense of company value and performance.
+          </p>
+
+          <div className="space-y-4">
+            {/* What does Yardstick do? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('what-does')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">What does Yardstick do?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'what-does' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'what-does' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6">
+                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                    Yardstick helps users build intuition around company value and performance. It surfaces a focused set of financial metrics built around three core questions:
+                  </p>
+                  <ol className="list-decimal list-inside space-y-2 text-gray-300 text-lg leading-relaxed mb-4">
+                    <li>How much money does the company generate?</li>
+                    <li>How much of that money does it keep?</li>
+                    <li>How much does the market believe the company is worth?</li>
+                  </ol>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Each of these questions are explored in the context of time and comparison.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* How does Yardstick work? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('how-works')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">How does Yardstick work?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'how-works' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'how-works' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6 space-y-4">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    The app is built with Next.js, so routing, page rendering, and API endpoints all live in the same codebase. API routes are implemented as serverless functions.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    When a company or list of companies is loaded, the frontend makes a request to one of these internal API routes. That route runs on Vercel as an isolated serverless function. It securely calls the Financial Modeling Prep (FMP) API, using a server-side API key.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    The server function fetches the required datasets (e.g., company profile, ratios, price history, income statements), optionally normalizes or reshapes the response, and returns typed JSON back to the client.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    On the frontend, React handles UI interactions like tab switching, time range selection, or chart toggles. When state or data changes, React re-renders the relevant components.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Charts are rendered with Recharts, which maps financial time-series data directly into declarative JSX components. Styling is handled with Tailwind.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Deployment is fully serverless on Vercel, so each API route scales independently and there's no dedicated backend server to manage.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* How does Yardstick handle performance and perceived speed? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('performance')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">How does Yardstick handle performance and perceived speed?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'performance' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'performance' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6 space-y-4">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Lists of companies are loaded in two stages. The app first calls the company-screener endpoint and immediately renders lightweight cards with basic data (name, market cap). This initial response is small and returns quickly, so users see meaningful content almost instantly.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Once the list of symbols is known, the app fetches full financial ratios in parallel batches and progressively enhances each card as the data resolves.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    This approach prioritizes perceived speed. Instead of waiting for complete financial datasets, the UI becomes interactive within ~500ms and improves as more data arrives.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    When a user expands a company card, historical market cap, quarterly financials, and earnings data are fetched in parallel to minimize total wait time.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* How does Yardstick handle incomplete or restricted data? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('incomplete-data')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">How does Yardstick handle incomplete or restricted data?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'incomplete-data' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'incomplete-data' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6 space-y-4">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Not every company has full financial coverage available from the API.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    If the ratios endpoint returns a restricted response (e.g., unavailable data), the API route gracefully degrades the response into a "limited" data shape instead of throwing an error.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    On the frontend, this renders a LimitedCompanyCard that displays what is available (such as market cap and beta) while clearly indicating that deeper financial data isn't accessible.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    The app never breaks or shows an error state simply because data is missing. Every response path is designed to degrade safely.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* How does Yardstick cache data? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('caching')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">How does Yardstick cache data?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'caching' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'caching' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6 space-y-4">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Today, all caching happens on the client.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    <span className="text-orange font-medium">Sector-level caching:</span> When a user loads a sector, the full dataset for that sector is stored in React state. If the user switches away and then returns to that sector, the data is served instantly from memory rather than triggering another API request. This prevents redundant network calls during browsing sessions.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    <span className="text-orange font-medium">LRU cache for historical chart data:</span> The comparison chart maintains a small in-memory LRU (Least Recently Used) cache capped at 20 symbols. When a company's historical market cap or quarterly financials are fetched, they are cached by symbol. If that company is viewed again—either as a primary card or comparison target—the data is reused. When the cache exceeds 20 entries, the least recently used dataset is evicted. This keeps memory usage predictable while avoiding repeated heavy historical fetches.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* What would need to change at larger scale? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('scale')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">What would need to change at larger scale?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'scale' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'scale' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6 space-y-4">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    At scale the API rate limit would become the primary bottleneck.
+                  </p>
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    The long-term mitigation strategy would involve adding a server-side caching layer with TTLs aligned to data freshness. For example, historical market cap data and quarterly financials could be cached for longer, whereas company market cap could be cached for shorter. This would drastically reduce upstream API calls and protect against rate-limit spikes during traffic bursts.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* How does Yardstick handle security? */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => toggleCaseStudy('security')}
+                className="w-full p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-2xl font-semibold text-white">How does Yardstick handle security?</h3>
+                  <div className="ml-4 text-gray-400">
+                    {openCaseStudy === 'security' ? '−' : '+'}
+                  </div>
+                </div>
+              </button>
+              {openCaseStudy === 'security' && (
+                <div className="px-6 pb-6 border-t border-zinc-800 pt-6">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    Yardstick does not collect, store, or process user accounts, authentication credentials, or personal information. The app is entirely read-only and stateless from a user perspective, which significantly reduces the overall attack surface. Unless this were to change, the biggest risk would be API abuse. Adding server-side caching and request throttling would further protect against such abuse.
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* OUTSIDE OF PRODUCT */}
-      <section id="outside" className="py-20 px-6 bg-zinc-900/50 border-t border-zinc-800">
+      <section id="outside" className="py-20 px-6 border-t border-zinc-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl font-bold text-white mb-12">
             Outside of Product
@@ -519,191 +742,6 @@ export default function Home() {
           <p className="text-gray-400 text-lg">
             Currently seeking PM roles | Graduating May 2026
           </p>
-        </div>
-      </section>
-
-      {/* TECHNICAL CASE STUDY */}
-      <section id="case-study" className="py-20 px-6 border-t border-zinc-800">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-bold text-white mb-6">
-            Technical Case Study: Yardstick
-          </h2>
-          <p className="text-xl text-gray-400 mb-12">
-            Yardstick is a financial comparison tool I designed and built to make it easy for people with average financial literacy to understand companies in context—in the context of the market, in the context of other companies, and in the context of themselves.
-          </p>
-
-          <div className="space-y-12">
-            {/* Application Mission */}
-            <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">Application Mission</h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Most financial tools are built for analysts and power users. They're dense, jargon-heavy, and assume you already know what you're looking at. Yardstick takes the opposite approach: surface the metrics that actually matter—market cap, revenue, earnings—and present them in a way that makes relative scale immediately intuitive.
-              </p>
-              <p className="text-gray-300 text-lg leading-relaxed">
-                The core interaction model is comparison. Every company card displays inline price-to-sales and price-to-earnings multiples, color-coded so users can quickly gauge relative valuation without doing the math themselves. Expanding a card reveals a historical chart where users can overlay a second company and toggle between market cap, revenue, and earnings over time. Sector filtering lets users browse the largest companies in any industry. The goal is always the same: understand a company by seeing it next to something familiar.
-              </p>
-            </div>
-
-            {/* Technical Architecture */}
-            <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">Technical Architecture</h3>
-              <div className="space-y-6">
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="text-lg font-semibold text-white mb-3">Frontend</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li><span className="text-orange font-medium">Next.js 16</span> — App Router with Turbopack. Selected for its file-based routing, built-in API routes (eliminating the need for a separate backend), and seamless Vercel deployment.</li>
-                        <li><span className="text-orange font-medium">React 19</span> — Component model with hooks for state management. No external state library needed—component-local useState handles all UI state.</li>
-                        <li><span className="text-orange font-medium">TypeScript</span> — End-to-end type safety from API response types through component props. Critical for a data-heavy app where shape mismatches cause silent rendering bugs.</li>
-                        <li><span className="text-orange font-medium">Tailwind CSS v4</span> — Utility-first styling with custom @theme color tokens. Enables rapid iteration without CSS file proliferation.</li>
-                        <li><span className="text-orange font-medium">Recharts</span> — React-native charting library for the historical comparison charts. Selected over D3 for simplicity—declarative JSX API maps naturally to React's component model.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-white mb-3">Backend & Infrastructure</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li><span className="text-orange font-medium">Vercel Serverless Functions</span> — Each API route deploys as an isolated serverless function. Zero server management, automatic scaling, and the API key stays server-side (never exposed to the browser).</li>
-                        <li><span className="text-orange font-medium">Financial Modeling Prep (FMP) API</span> — The sole external data source. Provides company profiles, financial ratios, historical prices, income statements, earnings calendars, and a company screener. Selected for its breadth of data on a free tier.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Data Loading */}
-            <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">Data Loading</h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Every piece of data flows through Next.js API routes that proxy calls to the FMP API. This keeps the API key server-side and gives us a clean abstraction layer for error handling, data transformation, and rate limit management.
-              </p>
-
-              <div className="space-y-4">
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">GET /api/top-companies</h4>
-                  <p className="text-gray-400 text-sm mb-2">FMP endpoints: /stable/company-screener, /stable/profile, /stable/ratios-ttm</p>
-                  <p className="text-gray-300 leading-relaxed mb-2">
-                    <span className="text-orange">Trigger:</span> Page load, and whenever the user selects a different sector filter.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Uses a two-phase loading strategy. Phase 1 ("quick mode") hits only the screener endpoint and returns basic data (name, market cap, beta) for instant display. Phase 2 fires in the background, fetching full financial ratios for each company in parallel batches of 10, then replaces the skeleton data. This gives users something to look at in under a second while the heavier data loads behind the scenes.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">GET /api/search?q=TICKER</h4>
-                  <p className="text-gray-400 text-sm mb-2">FMP endpoints: /stable/profile, /stable/ratios-ttm</p>
-                  <p className="text-gray-300 leading-relaxed mb-2">
-                    <span className="text-orange">Trigger:</span> User submits a ticker in the search bar.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Fetches the company profile and TTM financial ratios in parallel. If the ratios endpoint returns a 402 (data not available on the free tier), the response gracefully degrades to a "limited" data shape and the frontend renders a LimitedCompanyCard with only market cap and beta. This prevents the app from breaking on tickers outside the ~87 companies with full free-tier coverage.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">GET /api/historical/[symbol]</h4>
-                  <p className="text-gray-400 text-sm mb-2">FMP endpoints: /stable/historical-market-capitalization (paginated)</p>
-                  <p className="text-gray-300 leading-relaxed mb-2">
-                    <span className="text-orange">Trigger:</span> User expands a company card (chart renders automatically).
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Fetches full historical market cap data with pagination support (5,000 records per page). If a company has more than 5,000 trading days of history, the route automatically fetches the next page and deduplicates by date before returning the combined dataset.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">GET /api/historical-financials/[symbol]</h4>
-                  <p className="text-gray-400 text-sm mb-2">FMP endpoint: /stable/income-statement (quarterly, limit 40)</p>
-                  <p className="text-gray-300 leading-relaxed mb-2">
-                    <span className="text-orange">Trigger:</span> User expands a company card (fetched alongside historical market cap).
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Returns ~10 years of quarterly revenue and net income data. Used by the comparison chart when users toggle from market cap to revenue or earnings views. Calendar-quarter normalization ensures companies with different fiscal year-end dates align correctly on the chart.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">GET /api/earnings/[symbol]</h4>
-                  <p className="text-gray-400 text-sm mb-2">FMP endpoint: /stable/earnings (limit 5)</p>
-                  <p className="text-gray-300 leading-relaxed mb-2">
-                    <span className="text-orange">Trigger:</span> User expands a company card.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Fetches the next upcoming earnings date. If the company has a future earnings call where epsActual is still null, the card displays a live countdown timer that updates every minute—giving users context on when the displayed financials might change.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Caching Strategy */}
-            <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">Caching Strategy</h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Caching happens at two levels:
-              </p>
-              <div className="space-y-4">
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">Client-Side: Sector Data</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    When a user loads a sector (e.g., "Technology"), the full company data for that sector is cached in React state. Switching back to a previously loaded sector reads from the cache instantly instead of refetching. This is tracked via a loadedSectors Set and a sectorCompanies record, preventing redundant API calls as users browse between sectors.
-                  </p>
-                </div>
-                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
-                  <h4 className="text-lg font-semibold text-white mb-2">Client-Side: Chart Data (LRU Cache)</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    The ComparisonChart component maintains an LRU (Least Recently Used) cache of historical data, capped at 20 entries. When a user expands a company card, both market cap history and quarterly financials are fetched and cached by symbol. If that symbol appears again (either as a primary card or as a comparison target), the data is served from cache. When the cache exceeds 20 entries, the oldest entry is evicted.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Scaling Considerations */}
-            <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">What Would Break at Scale</h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                Yardstick currently runs on FMP's free tier (250 API calls/day). Each page load triggers 2+ API calls for the screener, and each card expansion triggers 3 more (historical market cap, historical financials, earnings). A single user session exploring 5 companies could easily consume 20+ calls.
-              </p>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                At true scale, the first thing that would break is the API rate limit. Even a modest increase in traffic—say, 50 concurrent users—would exhaust the daily quota within minutes. The second pressure point is server costs: every request currently makes a fresh round-trip through Vercel serverless functions to FMP, with no server-side caching layer.
-              </p>
-              <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                The mitigation path would involve aggressive server-side caching (Redis or an in-memory store at the API route level) with TTLs aligned to data freshness requirements—company profiles could cache for hours, while historical data could cache for a full day. This would dramatically reduce FMP calls per user and save on serverless function invocation costs. Beyond caching, scaling would likely require upgrading FMP API plans to increase rate limits and unlock full data coverage for all tickers, eliminating the current "limited" data fallback.
-              </p>
-            </div>
-
-            {/* Design Decisions */}
-            <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">Notable Design Decisions</h3>
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-semibold text-white mb-2">Two-Phase Loading</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Rather than making users wait for full financial data on every sector switch, the app renders "limited" cards immediately with screener data, then progressively enhances them with full ratios. This gives users something interactive within ~500ms while the heavier data resolves in the background.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-white mb-2">Graceful Degradation</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Not every ticker has full data on the free tier. Instead of showing an error, the app renders a LimitedCompanyCard that displays what it can (market cap, beta) and clearly communicates what's unavailable. The user never sees a broken state.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-white mb-2">Inline Valuation Multiples</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    Price-to-sales and price-to-earnings multiples are calculated on the fly and displayed as color-coded badges (green/amber/red) directly on the collapsed card. This surfaces valuation context at a glance without requiring the user to expand or compare—lowering the barrier to understanding what a company's numbers actually mean relative to its price.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-white mb-2">Calendar Quarter Normalization</h4>
-                  <p className="text-gray-300 leading-relaxed">
-                    When comparing quarterly revenue or earnings between two companies, the chart normalizes fiscal periods to calendar quarters. This ensures that Apple (fiscal year ending September) and Microsoft (fiscal year ending June) align correctly on the same axis, making the comparison meaningful rather than misleading.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

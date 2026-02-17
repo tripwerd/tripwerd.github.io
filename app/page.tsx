@@ -70,7 +70,7 @@ export default function Home() {
                     href="#case-study"
                     className="px-8 py-4 border-2 border-orange text-orange font-semibold rounded-lg hover:bg-orange/10 transition-colors w-fit"
                   >
-                    Technical Case Study
+                    Engineering Case Study
                   </a>
                 </div>
                 <div className="flex gap-4">
@@ -439,11 +439,21 @@ export default function Home() {
       {/* TECHNICAL CASE STUDY */}
       <section id="case-study" className="py-20 px-6 bg-zinc-900/50 border-t border-zinc-800">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-bold text-white mb-4">
-            <a href="https://compare-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Yardstick</a>:
-          </h2>
+          <div className="flex items-center gap-6 mb-4 flex-wrap">
+            <h2 className="text-5xl font-bold text-white">
+              Yardstick
+            </h2>
+            <a
+              href="https://compare-sigma.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border-2 border-orange text-orange font-semibold rounded-lg hover:bg-orange/10 transition-colors"
+            >
+              Visit Yardstick
+            </a>
+          </div>
           <p className="text-xl text-gray-400 mb-12">
-            Optimized for mobile, Yardstick is a financial data app, designed to help users build an intuitive sense of company value and performance.
+            Optimized for mobile, Yardstick is a financial data app designed to help users build an intuitive sense of public company value and performance.
           </p>
 
           <div className="space-y-4">
@@ -471,7 +481,7 @@ export default function Home() {
                     <li>How much does the market believe the company is worth?</li>
                   </ol>
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    Each of these questions are explored in the context of time and comparison.
+                    Each of these questions are explored in the context of time and comparison to other companies. Users are able to see data around earnings, revenue, market cap, and more.
                   </p>
                 </div>
               )}

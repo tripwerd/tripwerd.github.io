@@ -62,7 +62,7 @@ export default function Home() {
                 <div className="flex gap-4 flex-wrap">
                   <a
                     href="#shipped"
-                    className="px-8 py-4 bg-orange text-black font-semibold rounded-lg hover:bg-orange-light transition-colors w-fit"
+                    className="px-8 py-4 bg-orange text-black font-semibold rounded-lg hover:bg-orange-light transition-colors w-fit border-2 border-orange"
                   >
                     What I've Shipped
                   </a>

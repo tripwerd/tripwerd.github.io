@@ -574,16 +574,13 @@ export default function Home() {
               {openCaseStudy === 'incomplete-data' && (
                 <div className="px-6 pb-6 border-t border-zinc-800 pt-6 space-y-4">
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    Not every company has full financial coverage available from the API.
-                  </p>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    If the ratios endpoint returns a restricted response (e.g., unavailable data), the API route gracefully degrades the response into a "limited" data shape instead of throwing an error.
+                    Not every company has full financial coverage available from the API. If the ratios endpoint returns a restricted response (e.g., unavailable data), the API route gracefully degrades the response into a "limited" data shape instead of throwing an error.
                   </p>
                   <p className="text-gray-300 text-lg leading-relaxed">
                     On the frontend, this renders a LimitedCompanyCard that displays what is available (such as market cap and beta) while clearly indicating that deeper financial data isn't accessible.
                   </p>
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    The app never breaks or shows an error state simply because data is missing. Every response path is designed to degrade safely.
+                    If the API responds with a rate-limit error, the route returns a controlled fallback response rather than propagating a hard failure to the UI.
                   </p>
                 </div>
               )}

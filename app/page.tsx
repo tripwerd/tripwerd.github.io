@@ -190,7 +190,7 @@ export default function Home() {
             What I've Shipped at Blerp
           </h2>
           <p className="text-xl text-gray-400 mb-12">
-            Blerp helps live streamers monetize by letting their audience trigger user-generated content directly inside their broadcast. I shipped several key solutions across the entire product suite. To name a few:
+            Blerp helps live streamers monetize by enabling their audience to trigger user-generated content directly inside their broadcast, reaching over 100,000 weekly viewers. I shipped several key solutions across the entire product suite. To name a few:
           </p>
 
           {/* Projects - Collapsible */}

@@ -56,7 +56,7 @@ export default function Home() {
                 Hi, I'm Trip.
               </h1>
               <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed mb-8">
-                I'm a musician turned PM with an ear for user needs, a feel for product cadence, and a proven track record of shipping real solutions at scale that drive meaningful metrics.
+                I'm a musician turned product manager with an ear for user needs, a feel for product cadence, and a proven track record of shipping real solutions at scale that drive meaningful metrics.
               </p>
               <div className="flex flex-col gap-6">
                 <div className="flex gap-4 flex-wrap">

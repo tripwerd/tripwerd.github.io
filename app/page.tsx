@@ -56,7 +56,7 @@ export default function Home() {
                 Hi, I'm Trip.
               </h1>
               <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed mb-8">
-                I'm a musician turned PM with an ear for user needs, a feel for product cadence, and a proven track record of shipping real solutions that drive meaningful metrics.
+                I'm a musician turned PM with an ear for user needs, a feel for product cadence, and a proven track record of shipping real solutions at scale that drive meaningful metrics.
               </p>
               <div className="flex flex-col gap-6">
                 <div className="flex gap-4 flex-wrap">
@@ -453,7 +453,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-xl text-gray-400 mb-12">
-            Optimized for mobile, Yardstick is a financial data app designed to help users build an intuitive sense of public company value and performance.
+            Optimized for mobile, I built Yardstick as a financial data app designed to help users build an intuitive sense of public company value and performance.
           </p>
 
           <div className="space-y-4">

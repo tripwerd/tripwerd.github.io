@@ -146,7 +146,7 @@ export default function Home() {
                 I attended the University of Michigan to study jazz saxophone performance. While I loved music, I came to realize that I didn't want to pursue life as a professional musician. Instead, I became interested in the technical side of sound and transitioned into audio engineering.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                I learned to mix, edit, and design audio for music, television, advertising, <a href="https://vimeo.com/403883082" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">film</a>, and <a href="https://vimeo.com/449554456" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">video games</a>. I worked at the <a href="https://chicagorecordingcompany.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Chicago Recording Company</a>, where I was able to work with clients like Chance the Rapper, John Cusack, and Chris Rock. Then, in 2021, I joined the startup Blerp as a sound designer.
+                I learned to mix, edit, and design audio for music, television, advertising, <a href="https://vimeo.com/403883082" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">film</a>, and <a href="https://vimeo.com/449554456" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">video games</a>. I worked at the <a href="https://www.chicagorecording.com/" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Chicago Recording Company</a>, where I was able to work with clients like Chance the Rapper, John Cusack, and Chris Rock. Then, in 2021, I joined the startup Blerp as a sound designer.
               </p>
             </div>
 
@@ -397,7 +397,7 @@ export default function Home() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-2">Leaderboards</h3>
                     <p className="text-orange font-medium mb-3">
-                      Increased revenue by ~4%
+                      Increased revenue by ~12%
                     </p>
                     <div className="flex gap-2 flex-wrap">
                       <span className="px-3 py-1 bg-zinc-800 text-orange rounded-full text-sm">Engagement</span>
@@ -746,6 +746,17 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Post-graduation copy candidates:
+              <p className="text-gray-400 text-lg">
+                Currently seeking PM roles | Graduated May 2026
+              </p>
+              <p className="text-gray-400 text-lg">
+                Product manager | NYU Stern Tech MBA, Class of 2026
+              </p>
+              <p className="text-gray-400 text-lg">
+                Open to PM opportunities | Tech MBA completed May 2026
+              </p>
+          */}
           <p className="text-gray-400 text-lg">
             Currently seeking PM roles | Graduating May 2026
           </p>

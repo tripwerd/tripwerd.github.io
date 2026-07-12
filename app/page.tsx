@@ -36,9 +36,9 @@ export default function Home() {
               <a href="#outside" className="text-gray-400 hover:text-orange transition-colors">
                 Outside of Product
               </a>
-              <a href="#case-study" className="text-gray-400 hover:text-orange transition-colors">
+              {/* <a href="#case-study" className="text-gray-400 hover:text-orange transition-colors">
                 Case Study
-              </a>
+              </a> */}
               <a href="#contact" className="text-gray-400 hover:text-orange transition-colors">
                 Contact
               </a>
@@ -66,12 +66,12 @@ export default function Home() {
                   >
                     What I've Shipped
                   </a>
-                  <a
+                  {/* <a
                     href="#case-study"
                     className="px-8 py-4 border-2 border-orange text-orange font-semibold rounded-lg hover:bg-orange/10 transition-colors w-fit"
                   >
                     Engineering Case Study
-                  </a>
+                  </a> */}
                 </div>
                 <div className="flex gap-4">
                   <a
@@ -136,14 +136,14 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">Beginnings in Music</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I studied <a href="https://youtu.be/SSjNtMzrdTQ?si=P4LEsxmbRDcO4Lfc" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">classical piano for 14 years</a> and was a dedicated saxophonist, eventually <a href="https://www.youtube.com/watch?v=_YqqWSv6Rh0&list=RD_YqqWSv6Rh0&start_radio=1" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">performing for New Trier Township High School</a>—one of the top high school jazz programs in the country—in venues across New York, Chicago, and New Orleans. Along the way, I had the opportunity to open for groups and artists including the Dizzy Gillespie All Stars and Christian McBride. As principle alto saxophonist, what I loved most was leading my saxophone section: learning challenging material, pushing us to excel, and celebrating the shared success of a strong performance together.
+                I studied <a href="https://youtu.be/SSjNtMzrdTQ?si=P4LEsxmbRDcO4Lfc" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">classical piano for 14 years</a> and was a dedicated saxophonist, eventually <a href="https://www.youtube.com/watch?v=_YqqWSv6Rh0&list=RD_YqqWSv6Rh0&start_radio=1" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">performing for New Trier Township High School</a>—one of the top high school jazz programs in America—in venues across New York, Chicago, and New Orleans. Along the way, I had the opportunity to open for groups and artists including the Dizzy Gillespie All Stars and Christian McBride. As principle alto saxophonist, what I loved most was leading my saxophone section and celebrating the shared success of a strong performance together.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">Transition to Audio</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I attended the University of Michigan to study jazz saxophone performance. While I loved music, I came to realize that I didn't want to pursue life as a professional musician. Instead, I became interested in the technical side of sound and transitioned into audio engineering.
+                I attended the University of Michigan to study jazz saxophone performance. While I loved performance, I became interested in the technical side of sound and transitioned into audio engineering.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
                 I learned to mix, edit, and design audio for music, television, advertising, <a href="https://vimeo.com/403883082" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">film</a>, and <a href="https://vimeo.com/449554456" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">video games</a>. I worked at the <a href="https://www.chicagorecording.com/" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Chicago Recording Company</a>, where I was able to work with clients like Chance the Rapper, John Cusack, and Chris Rock. Then, in 2021, I joined the startup Blerp as a sound designer.
@@ -163,20 +163,17 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-orange mb-4">Leveling Up</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                While I loved my time working at Blerp, I knew that to truly excel as a PM I needed to deepen my business and technical foundations. I began the <a href="https://www.stern.nyu.edu/programs-admissions/tech-mba/program" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Tech MBA</a> program at the NYU Stern School of Business in May 2025.
+                While I loved my time working at Blerp, I knew that to truly excel as a PM I needed to deepen my business and technical foundations. I enrolled in the <a href="https://www.stern.nyu.edu/programs-admissions/tech-mba/program" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Tech MBA</a> program at the NYU Stern School of Business in May 2025 and graduated in May 2026.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                The MBA has been transformative. It's given me stronger fluency in applying technology to real business problems and sharpened how I think about product decisions in a broader organizational context. Developing skills across disciplines like data science, finance, engineering, and business strategy has been rewarding and strengthened confidence significantly.
+                The MBA was transformative. Building skills across disciplines like data science, finance, engineering, and business strategy made me a more well-rounded and confident product thinker.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-orange mb-4">What's Next</h3>
+              <h3 className="text-2xl font-semibold text-orange mb-4">Warner Music Group</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I graduate in May 2026. While I've loved building products in a startup environment, I see my next chapter in a larger organization—one where I can learn from exceptional product leaders and operate at greater scale.
-              </p>
-              <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                I'm excited to bring my unique background to that environment, contributing thoughtfully while continuing to grow as a product leader.
+                Most importantly, I was able to leverage the degree and my prior experience to land a product management role at <a href="https://www.wmg.com/" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Warner Music Group</a>, where I am excited to continue growing as a product leader and build technology that helps shape the future of the music industry.
               </p>
             </div>
           </div>

@@ -156,7 +156,7 @@ export default function Home() {
                 At <a href="https://blerp.com" target="_blank" rel="noopener noreferrer" className="text-orange hover:text-orange-light underline">Blerp</a>, I was exposed to product management for the first time. Watching designers, engineers, and PMs work together to ship meaningful outcomes echoed the teamwork I'd experienced as principle alto saxophonist, and I became instantly hooked.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                I immersed myself in everything product—both inside and the Blerp office—reading books, sitting in on discussions, contributing wherever possible, and gradually taking on more responsibility. That progression led to over four years in a dedicated product role, where I shipped solutions across our product suite.
+                I immersed myself in everything product—both inside and outside the Blerp office—and gradually took on more responsibility. That progression led to over four years in a dedicated product role, where I shipped solutions across our product suite.
               </p>
             </div>
 

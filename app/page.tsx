@@ -23,23 +23,23 @@ export default function Home() {
             <a href="#home" className="text-xl font-bold text-white">
               Trip Werd
             </a>
-            <div className="hidden md:flex gap-8">
-              <a href="#home" className="text-gray-400 hover:text-orange transition-colors">
+            <div className="hidden md:flex gap-5 lg:gap-8">
+              <a href="#home" className="text-sm lg:text-base text-gray-400 hover:text-orange transition-colors">
                 Home
               </a>
-              <a href="#story" className="text-gray-400 hover:text-orange transition-colors">
+              <a href="#story" className="text-sm lg:text-base text-gray-400 hover:text-orange transition-colors">
                 My Story
               </a>
-              <a href="#shipped" className="text-gray-400 hover:text-orange transition-colors">
+              <a href="#shipped" className="text-sm lg:text-base text-gray-400 hover:text-orange transition-colors">
                 What I've Shipped
               </a>
-              <a href="#outside" className="text-gray-400 hover:text-orange transition-colors">
+              <a href="#case-study" className="text-sm lg:text-base text-gray-400 hover:text-orange transition-colors">
+                Yardstick
+              </a>
+              <a href="#outside" className="text-sm lg:text-base text-gray-400 hover:text-orange transition-colors">
                 Outside of Product
               </a>
-              {/* <a href="#case-study" className="text-gray-400 hover:text-orange transition-colors">
-                Case Study
-              </a> */}
-              <a href="#contact" className="text-gray-400 hover:text-orange transition-colors">
+              <a href="#contact" className="text-sm lg:text-base text-gray-400 hover:text-orange transition-colors">
                 Contact
               </a>
             </div>
@@ -703,7 +703,7 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-20 px-6 border-t border-zinc-800">
+      <section id="contact" className="py-20 px-6 bg-zinc-900/50 border-t border-zinc-800">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-5xl font-bold text-white mb-12">
             Contact
